@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public abstract class Gate : MonoBehaviour
 {
     public Image outputIMG;
+    public GameObject lineParent;
     public List<GameObject> btns = new List<GameObject>();
     protected List<bool> inputs = new List<bool>();
     protected bool output = false;
@@ -54,12 +55,16 @@ public abstract class Gate : MonoBehaviour
     {
         inputs[index] = true;
         btns[index].GetComponentInChildren<Text>().text = $"#{index}: On";
+        lineParent.transform.GetChild(index).GetComponent<LineRenderer>().startColor = Color.green;
+        lineParent.transform.GetChild(index).GetComponent<LineRenderer>().endColor = Color.green;
     }
 
     private void InputFalse(int index)
     {
         inputs[index] = false;
         btns[index].GetComponentInChildren<Text>().text = $"#{index}: Off";
+        lineParent.transform.GetChild(index).gameObject.GetComponent<LineRenderer>().startColor = Color.red;
+        lineParent.transform.GetChild(index).gameObject.GetComponent<LineRenderer>().endColor = Color.red;
     }
 
     private void InputToggle(int index)
