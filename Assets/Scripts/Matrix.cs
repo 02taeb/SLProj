@@ -1,19 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Matrix : MonoBehaviour
 {
-    List<string> strings= new List<string>();
+    public List<Text> texts = new List<Text>();
+    float timer = 0;
+    public float threshold = 0.5f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        foreach (string s in strings)
+        timer += Time.deltaTime;
+        if (timer > threshold)
         {
-            for (int i = 0; i < s.Length; i++)
+            timer = 0;
+            Debug.Log("If");
+            for (int i = 0; i < texts.Count; i++)
             {
-                s[i] = ((Random.RandomRange(0, 100) % 2 == 0) ? '0' : '1';
+                string temp = texts[i].text;
+                char[] chars= temp.ToCharArray();
+                temp = "";
+                for (int j = 0; j < chars.Length; j++)
+                {
+                    chars[j] = (Random.Range(0, 100) % 2 == 0) ? '0' : '1';
+                    temp += chars[j].ToString();
+                }
+                texts[i].text = temp;
             }
         }
     }
