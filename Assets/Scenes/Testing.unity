@@ -662,8 +662,9 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 75.92566, y: 12.2453, z: 4.99}
-  - {x: 521.1864, y: 644.2604, z: 4.99}
+  - {x: 85, y: 12.2453, z: 5}
+  - {x: 85, y: 630, z: 5}
+  - {x: 505, y: 630, z: 5}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -686,7 +687,7 @@ LineRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 0, b: 0, a: 1}
       key1: {r: 1, g: 0, b: 0, a: 1}
-      key2: {r: 0, g: 1, b: 0.9641509, a: 0}
+      key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 1, b: 0.9641509, a: 0}
       key4: {r: 0, g: 1, b: 0.9641509, a: 0}
       key5: {r: 0, g: 1, b: 0.9641509, a: 0}
@@ -700,7 +701,7 @@ LineRenderer:
       ctime5: 65535
       ctime6: 0
       ctime7: 0
-      atime0: 578
+      atime0: 0
       atime1: 65535
       atime2: 0
       atime3: 0
@@ -708,7 +709,7 @@ LineRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 1
+      m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
