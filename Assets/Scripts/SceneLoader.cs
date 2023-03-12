@@ -29,7 +29,7 @@ public class SceneLoader : MonoBehaviour
 
     public void DisableObj(GameObject target)
     {
-        Debug.Log("Press");
+        //Debug.Log("Press");
         target.SetActive(false);
     }
 }
