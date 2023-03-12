@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 5ee80d3ea8d481341837a618474cbd36
   - enabled: 1
+    path: Assets/Scenes/LvlNOT.unity
+    guid: 869c58ab77a75c24d9953ac67f03a8ef
+  - enabled: 1
+    path: Assets/Scenes/LvlAND.unity
+    guid: 0221b0e0bbe04514eadd1d03689cada3
+  - enabled: 1
+    path: Assets/Scenes/LvlXOR.unity
+    guid: fa418574e78fffb4682fc778b09c09fb
+  - enabled: 1
+    path: Assets/Scenes/LvlLast.unity
+    guid: d164b8fac72937c40b872d241fc3d5bb
+  - enabled: 0
+    path: Assets/Scenes/Credits.unity
+    guid: 6630fc62a22e5ee449004f1f5d866bd1
+  - enabled: 0
     path: Assets/Scenes/Testing.unity
     guid: 6b4e6bda9f11e7646bc92acafecb6ae8
   m_configObjects: {}

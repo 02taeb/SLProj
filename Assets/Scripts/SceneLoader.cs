@@ -17,8 +17,19 @@ public class SceneLoader : MonoBehaviour
         
     }
 
-    public void PlayGame()
+    public void LoadNextScene()
     {
-        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex == 1) ? 0 : 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void EnableObj(GameObject target)
+    {
+        target.SetActive(true);
+    }
+
+    public void DisableObj(GameObject target)
+    {
+        Debug.Log("Press");
+        target.SetActive(false);
     }
 }
