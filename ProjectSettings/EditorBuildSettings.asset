@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LvlAND.unity
     guid: 0221b0e0bbe04514eadd1d03689cada3
   - enabled: 1
+    path: Assets/Scenes/PzlAND.unity
+    guid: e270d54f33d55354ab5afbb61099598a
+  - enabled: 1
     path: Assets/Scenes/LvlXOR.unity
     guid: fa418574e78fffb4682fc778b09c09fb
   - enabled: 1

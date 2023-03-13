@@ -20,6 +20,9 @@ public class TruthTables : MonoBehaviour
             case 2:
                 PzlNOT();
                 break;
+            case 4:
+                PzlAND();
+                break;
         }
     }
 
@@ -34,6 +37,22 @@ public class TruthTables : MonoBehaviour
         else
         {
             txtA.text = TXT_A + "0";
+            feedback.text = "Incorrect!";
+            done.gameObject.SetActive(false);
+        }
+    }
+
+    public void PzlAND()
+    {
+        if (A.value == 2 && B.value == 2)
+        {
+            txtA.text = TXT_A + "1 | 1";
+            feedback.text = "Correct!";
+            done.gameObject.SetActive(true);
+        }
+        else
+        {
+            txtA.text = TXT_A + "1 | 0";
             feedback.text = "Incorrect!";
             done.gameObject.SetActive(false);
         }

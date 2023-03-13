@@ -9,11 +9,6 @@ public class PzlNOT : MonoBehaviour
     public GateNOT outp;
     public LineRenderer lineA, lineB;
     public Dropdown A, B;
-    // Start is called before the first frame update
-    void Start()
-    {
-        // 1 nere on
-    }
 
     // Update is called once per frame
     void FixedUpdate()
