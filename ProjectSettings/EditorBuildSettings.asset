@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LvlXOR.unity
     guid: fa418574e78fffb4682fc778b09c09fb
   - enabled: 1
+    path: Assets/Scenes/PzlXOR.unity
+    guid: 4c6b982e9c2fc844a8085003aa4bc8ee
+  - enabled: 1
     path: Assets/Scenes/LvlLast.unity
     guid: d164b8fac72937c40b872d241fc3d5bb
   - enabled: 0

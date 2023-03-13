@@ -23,6 +23,9 @@ public class TruthTables : MonoBehaviour
             case 4:
                 PzlAND();
                 break;
+            case 6:
+                PzlXOR();
+                break;
         }
     }
 
@@ -53,6 +56,22 @@ public class TruthTables : MonoBehaviour
         else
         {
             txtA.text = TXT_A + "1 | 0";
+            feedback.text = "Incorrect!";
+            done.gameObject.SetActive(false);
+        }
+    }
+
+    public void PzlXOR()
+    {
+        if (A.value == 2 && B.value == 2)
+        {
+            txtA.text = "0 | 0 | 1 | 1";
+            feedback.text = "Correct!";
+            done.gameObject.SetActive(true);
+        }
+        else
+        {
+            txtA.text = "0 | 0 | 1 | 1";
             feedback.text = "Incorrect!";
             done.gameObject.SetActive(false);
         }
