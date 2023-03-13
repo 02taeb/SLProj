@@ -3553,9 +3553,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'You got the AND badge!
+  m_Text: 'You got the XOR badge!
 
-    Press the button to continue to the next level'
+    Press the button to continue to the LAST level'
 --- !u!222 &1436629531
 CanvasRenderer:
   m_ObjectHideFlags: 0
