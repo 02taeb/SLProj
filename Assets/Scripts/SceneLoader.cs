@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -31,5 +19,10 @@ public class SceneLoader : MonoBehaviour
     {
         //Debug.Log("Press");
         target.SetActive(false);
+    }
+
+    public void LoadFirstScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }
