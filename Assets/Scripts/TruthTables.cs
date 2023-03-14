@@ -10,6 +10,7 @@ public class TruthTables : MonoBehaviour
     public Text txtA, feedback;
     public Button done;
     public GameObject badge;
+    public Image output;
     private const string TXT_A = "0 | 1 | ";
 
     // Update is called once per frame
@@ -25,6 +26,9 @@ public class TruthTables : MonoBehaviour
                 break;
             case 6:
                 PzlXOR();
+                break;
+            case 7:
+                PzlLast();
                 break;
         }
     }
@@ -72,6 +76,22 @@ public class TruthTables : MonoBehaviour
         else
         {
             txtA.text = "0 | 0 | 1 | 1";
+            feedback.text = "Incorrect!";
+            done.gameObject.SetActive(false);
+        }
+    }
+
+    public void PzlLast()
+    {
+        if (output.color == Color.green)
+        {
+            txtA.text = "1 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1";
+            feedback.text = "Correct!";
+            done.gameObject.SetActive(true);
+        }
+        else
+        {
+            txtA.text = "1 | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 0";
             feedback.text = "Incorrect!";
             done.gameObject.SetActive(false);
         }

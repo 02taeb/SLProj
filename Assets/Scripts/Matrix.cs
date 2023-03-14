@@ -16,7 +16,7 @@ public class Matrix : MonoBehaviour
         if (timer > threshold)
         {
             timer = 0;
-            Debug.Log("If");
+            //Debug.Log("If");
             for (int i = 0; i < texts.Count; i++)
             {
                 string temp = texts[i].text;
