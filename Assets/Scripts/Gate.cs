@@ -72,7 +72,7 @@ public abstract class Gate : MonoBehaviour
         if (inputs[index])
             InputFalse(index);
         else
-            InputTrue(index);
+            InputTrue(index); 
     }
 
     public void OnPress(GameObject sender)
