@@ -24,19 +24,19 @@ public class GateMulti : MonoBehaviour
         switch (dropdown.value)
         {
             case 0:
-                output = false;
+                output = false; // if default value, should not output true
                 break;
             case 1:
-                output = input1;
+                output = input1; // if wire, should output singular input
                 break;
             case 2:
-                output = input1 && input2;
+                output = input1 && input2; // if AND, output AND of inputs
                 break;
             case 3:
-                output = !input1;
+                output = !input1; // if NOT, output Negation of singular input
                 break;
             case 4:
-                output = input1 ^ input2;
+                output = input1 ^ input2; // if XOR, output XOR of inputs
                 break;
         }
         SetOutputLine(output);
